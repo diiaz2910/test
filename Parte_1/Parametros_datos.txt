@@ -21,7 +21,7 @@ datos, pueden considerarse como parámetros opcionales.
 2.Seleccion del modo de planificacion automatica/manual
 ---Manual: el usuario genera un tipo de "reporte" que define las rutas que se van a programar y luego asigna los vehiculos asociados a la zona de recolecta/entrega se ingresan los datoso estimados de kilometros
 que se cruzaran luego con los datos reales de distancias, cierra la programacion.
----Automatica: el usuario genera el mismo reporte 
+---Automatica: El usuario solicita al sistema la generación automática de rutas y asignaciones. El sistema produce un reporte optimizado, minimizando el consumo de combustible según los datos y restricciones cargadas. 
 3.Validacion, el sistem avalida que las rutas cumplen con la configuracion.
 4.Ajustes como asignacion de choferes.
 5.El sistema genera reportes de trazabilidad, estimados vs real
