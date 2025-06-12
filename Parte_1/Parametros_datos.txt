@@ -1,0 +1,27 @@
+2. Supón que trabajas en una empresa de logística. Te piden diseñar un programa para analizar rutas de entrega con el objetivo de reducir el consumo de combustible. Aún no tienes datos disponibles.
+
+**¿Qué parámetros y datos solicitarías? Justifica tu respuesta.
+RESPUESTA=
+
+- Coordenadas geograficas (latitud y longitud) para el calculo de distancias y construccion de nodos. 
+- Tipos de vehiculos y sus capacidades, ubicacion inicial 
+- Condiciones de trafico (horas pico, accidentes, bloqueos)
+- Restricciones de movilidad (dimensiones del veh, peso del veh, legales, )
+- Precio del combustible 
+- Carga de las entregas (datos del peso de la carga)
+
+
+Si nos enfocamos solo en el consumo de combustible, estos datos nos permiten modelar un estimado del consumo en cada ruta.
+Para mayor precisión, podrían incluirse datos como el estado de las vías, pendientes y tipo de asfalto pero  debido a la complejidad en el mantenimiento de estos 
+datos, pueden considerarse como parámetros opcionales.
+
+
+**¿Qué flujo general tendría tu programa, desde la entrada de datos hasta la generación de resultados?
+1.Ingreso de datos, ya sea por configuracion del proveedor del software o configuracion del cliente, cargar los datos del punto anterior.
+2.Seleccion del modo de planificacion automatica/manual
+---Manual: el usuario genera un tipo de "reporte" que define las rutas que se van a programar y luego asigna los vehiculos asociados a la zona de recolecta/entrega se ingresan los datoso estimados de kilometros
+que se cruzaran luego con los datos reales de distancias, cierra la programacion.
+---Automatica: el usuario genera el mismo reporte 
+3.Validacion, el sistem avalida que las rutas cumplen con la configuracion.
+4.Ajustes como asignacion de choferes.
+5.El sistema genera reportes de trazabilidad, estimados vs real
